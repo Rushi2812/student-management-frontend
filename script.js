@@ -114,7 +114,7 @@ window.onload = function () {
       .then((res) => res.json())
       .then((students) => {
         if (students.length === 0) {
-          alert("❌ No students found.");
+          alert("No students found.");
           return;
         }
 
@@ -134,7 +134,7 @@ window.onload = function () {
           tableBody.appendChild(row);
         });
       })
-      .catch(() => alert("❌ Error while searching by name!"));
+      .catch(() => alert("Error while searching by name!"));
   };
 
   window.loadStudents = loadStudents;
